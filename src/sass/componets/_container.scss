@@ -1,25 +1,26 @@
 .container {
-outline: 1px solid red;
-  padding: 0 15px;
+  outline: 1px solid red;
+  padding: 0 10px;
   margin: 0 auto;
-@media screen and (min-width: 320px) {
-outline: 1px solid purple;
-width: 320px;
-}  
-@media screen and (min-width: 576px) {
-outline: 1px solid yellow;
-width: 576px;
-}
-@media screen and (min-width: 768px) {
-outline: 1px solid orange;
-width: 768px;
-}
-@media screen and (min-width: 992px) {
-width: 992;
-outline: 1px solid green;  
-}
-@media screen and (min-width: 1600px) {
-  outline: 1px solid blue;
-  width: 1600px;
-}
+  @media screen and (min-width: 320px) {
+    outline: 1px solid purple;
+    width: 320px;
+  }
+  @media screen and (min-width: 576px) {
+    outline: 1px solid yellow;
+    width: 576px;
+     padding: 0 32px;
+  }
+  @media screen and (min-width: 768px) {
+    outline: 1px solid orange;
+    width: 768px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 992;
+    outline: 1px solid green;
+  }
+  @media screen and (min-width: 1600px) {
+    outline: 1px solid blue;
+    width: 1400px;
+  }
 }
