@@ -1,0 +1,135 @@
+// .hero_div_wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+//   gap: 16px;
+
+//   @media (min-width: 768px) {
+//     flex-direction: row;
+//     align-items: center;
+//     text-align: left;
+//     gap: 40px;
+//   }
+// }
+
+// .hero_title {
+//   @media screen and (max-width: 320px) {
+//     font-family: var(--font-family);
+//     font-weight: 600;
+//     font-size: 24px;
+//     line-height: 150%;
+//     text-align: center;
+//     color: #000;
+//   }
+
+//   @media screen and (min-width: 576px) {
+//     font-family: var(--font-family);
+//     font-weight: 600;
+//     font-size: 34px;
+//     line-height: 132%;
+//     color: #000;
+//   }
+//   @media screen and (min-width: 768px) {
+//     font-size: 36px;
+//     line-height: 125%;
+//   }
+//   @media screen and (min-width: 992px) {
+//     font-size: 48px;
+//     line-height: 133%;
+//   }
+//   @media screen and (min-width: 1600px) {
+//     font-size: 64px;
+//     line-height: 125%;
+//   }
+// }
+// .hero_text {
+//   @media screen and (min-width: 320px) {
+//     font-family: var(--font-family);
+//     font-weight: 400;
+//     font-size: 14px;
+//     text-align: center;
+//     color: #8f95a5;
+//   }
+
+//   @media screen and (max-width: 576px) {
+//     font-family: var(--font-family);
+//     font-weight: 400;
+//     font-size: 16px;
+//     text-align: center;
+//     color: #8f95a5;
+//   }
+//   @media screen and (min-width: 768px) {
+//   }
+//   @media screen and (min-width: 992px) {
+//   }
+//   @media screen and (min-width: 1600px) {
+//   }
+// }
+
+.container.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .hero_div_wrapper {
+    text-align: center;
+  }
+
+  span {
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .hero_text {
+    font-size: 18px;
+    color: #555;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media (min-width: 992px) {
+      font-size: 22px;
+    }
+    @media (min-width: 1600px) {
+      font-size: 24px;
+    }
+  }
+  .hero_button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    width: 289px;
+    height: 60px;
+    background-color: #263238;
+    cursor: pointer;
+  }
+  .hero_visual {
+    @media screen and (min-width: 768px) {
+      width: 160%;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 120%;
+    }
+    @media screen and (min-width: 1600px) {
+      width: 190%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .hero_div_wrapper {
+      text-align: left;
+    }
+  }
+}
