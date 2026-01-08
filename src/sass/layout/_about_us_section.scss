@@ -1,51 +1,73 @@
 .about {
   &_title {
+    margin-bottom: 330px;
+    @media screen and (min-width: 576px) {
+      margin-bottom: 400px;
+    }
     @media screen and (min-width: 768px) {
       justify-content: left;
-      margin-bottom: -60px;
+      margin-bottom: 0px;
     }
     @media screen and (min-width: 1600px) {
       justify-content: left;
-      margin-bottom: -140px;
+      margin-bottom: 25px;
     }
   }
   &_content {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     @media screen and (min-width: 768px) {
       flex-direction: row;
-    }
-  }
-  &_img {
-    display: block;
-    background-image: url("../img/about.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 283px;
-    height: 283px;
-    margin-bottom: 20px;
-    flex-shrink: 0;
-    @media screen and (min-width: 576px) {
-      width: 352px;
-      height: 352px;
-      margin-bottom: 25px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 295px;
-      height: 295px;
-      order: 1;
-      margin-bottom: 0px;
+      margin-right: 290px;
     }
     @media screen and (min-width: 992px) {
-      width: 336px;
-      height: 336px;
+      margin-right: 330px;
     }
     @media screen and (min-width: 1600px) {
-      width: 500px;
-      height: 500px;
+      margin-right: 500px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 430px;
+      left: 10px;
+      background-image: url('../img/about.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 283px;
+      height: 283px;
+      margin-bottom: 20px;
+      flex-shrink: 0;
+      @media screen and (min-width: 576px) {
+        width: 352px;
+        height: 352px;
+        margin-bottom: 25px;
+        bottom: 180px;
+        left: 80px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 295px;
+        height: 295px;
+        order: 1;
+        margin-bottom: 0px;
+        bottom: 0px;
+        left: 400px;
+      }
+      @media screen and (min-width: 992px) {
+        width: 336px;
+        height: 336px;
+        left: 600px;
+      }
+      @media screen and (min-width: 1600px) {
+        width: 500px;
+        height: 500px;
+        bottom: -30px;
+        left: 800px;
+      }
     }
   }
 
@@ -89,9 +111,6 @@
       justify-content: left;
       margin-top: 0px;
       gap: 40px;
-    }
-    @media screen and (min-width: 992px) {
-      gap: 50px;
     }
     @media screen and (min-width: 1600px) {
       gap: 115px;
