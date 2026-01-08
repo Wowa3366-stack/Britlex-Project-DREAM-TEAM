@@ -2,11 +2,14 @@
   &_title {
     @media screen and (min-width: 768px) {
       justify-content: left;
+      margin-bottom: -40px;
+    }
+    @media screen and (min-width: 992px) {
       margin-bottom: -60px;
     }
     @media screen and (min-width: 1600px) {
       justify-content: left;
-      margin-bottom: -140px;
+      margin-bottom: -110px;
     }
   }
   &_content {
