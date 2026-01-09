@@ -164,8 +164,8 @@ padding-top: 11px;
         margin-top: 40px;
       margin-bottom: 61px;
       width: 556px;
-
-
+    }
+  }
   
   .hero_button {
     font-family: var(--font-family);
@@ -197,6 +197,7 @@ padding-top: 11px;
     background-color: #263238;
     cursor: pointer;
   }
+}
   .hero_visual {
     @media screen and (min-width: 768px) {
       width: 160%;
