@@ -1,4 +1,9 @@
 .about {
+  &_container{
+    @media screen and (min-width: 768px) {
+      position: relative;
+    }
+  }
   &_title {
     margin-bottom: 330px;
     @media screen and (min-width: 576px) {
@@ -17,25 +22,47 @@
     }
   }
   &_content {
-    position: relative;
-    display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      margin-right: 290px;
-    }
     @media screen and (min-width: 992px) {
       margin-right: 330px;
     }
     @media screen and (min-width: 1600px) {
       margin-right: 500px;
     }
+  }
+
+  &_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    color: var(--third-text-color);
+    margin-bottom: 80px;
+    @media screen and (min-width: 576px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      position: static;
+      width: 320px;
+    }
+    @media screen and (min-width: 992px) {
+      font-size: 16px;
+      margin-right: 70px;
+      width: 530px;
+    }
+    @media screen and (min-width: 1600px) {
+      font-size: 20px;
+      margin-right: 200px;
+      margin-bottom: 115px;
+      width: 635px;
+    }
     &::before {
       content: "";
       position: absolute;
-      bottom: 430px;
+      bottom: 120px;
       left: 10px;
       background-image: url('../img/about.svg');
       background-repeat: no-repeat;
@@ -49,7 +76,7 @@
         width: 352px;
         height: 352px;
         margin-bottom: 25px;
-        bottom: 180px;
+        bottom: 80px;
         left: 80px;
       }
       @media screen and (min-width: 768px) {
@@ -71,33 +98,6 @@
         bottom: -30px;
         left: 800px;
       }
-    }
-  }
-
-  &_text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 13px;
-    text-align: center;
-    color: var(--third-text-color);
-    margin-bottom: 80px;
-    @media screen and (min-width: 576px) {
-      font-size: 14px;
-    }
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-      margin-right: 80px;
-    }
-    @media screen and (min-width: 992px) {
-      font-size: 16px;
-      margin-right: 70px;
-    }
-    @media screen and (min-width: 1600px) {
-      font-size: 20px;
-      margin-right: 200px;
-      margin-bottom: 115px;
     }
   }
   &_list {
