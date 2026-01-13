@@ -5,10 +5,6 @@
     }
   }
   &_title {
-    margin-bottom: 330px;
-    @media screen and (min-width: 576px) {
-      margin-bottom: 400px;
-    }
     @media screen and (min-width: 768px) {
       justify-content: left;
       margin-bottom: 0px;
@@ -61,9 +57,8 @@
     }
     &::before {
       content: "";
-      position: absolute;
-      bottom: 120px;
-      left: 10px;
+      display: block;
+      margin: auto;
       background-image: url('../img/about.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -76,10 +71,9 @@
         width: 352px;
         height: 352px;
         margin-bottom: 25px;
-        bottom: 80px;
-        left: 80px;
       }
       @media screen and (min-width: 768px) {
+        position: absolute;
         width: 295px;
         height: 295px;
         order: 1;
