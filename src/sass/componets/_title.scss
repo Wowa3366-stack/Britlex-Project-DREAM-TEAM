@@ -11,15 +11,18 @@
     @media screen and ( min-width: 576px) {
         margin-bottom: 50px;
         font-size: 30px;
+        line-height: 267%;
     };
     @media screen and ( min-width: 768px) {
         margin-bottom: 40px;
     };
     @media screen and ( min-width: 992px) {
         font-size: 36px;
+        line-height: 222%;
     };
     @media screen and ( min-width: 1600px) {
         margin-bottom: 60px;
         font-size: 48px;
+        line-height: 167%;
     };
 }
