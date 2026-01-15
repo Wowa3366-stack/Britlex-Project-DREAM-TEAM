@@ -20,8 +20,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Britlex-Project-DREAM-TEAM/assets/index-0dc83ea4.js"></script>
-    <link rel="stylesheet" href="/Britlex-Project-DREAM-TEAM/assets/index-d4fe301d.css">
+    <script type="module" crossorigin src="/Britlex-Project-DREAM-TEAM/assets/index-329a4817.js"></script>
+    <link rel="stylesheet" href="/Britlex-Project-DREAM-TEAM/assets/index-c429fd22.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -45,7 +45,7 @@
 
     <section class="hero_section section">
   <div class="container hero">
-    <img class="img_hero" src="../img/hero_logo.svg" alt="hero_logo">
+    <img class="img_hero" src="/Britlex-Project-DREAM-TEAM/assets/hero_logo-6bb22259.svg" alt="hero_logo">
     <div class="hero_div_wrapper">
       <h1 class="hero_title">
         <span>Learn</span>
@@ -56,7 +56,7 @@
         With our teachers who write a program for each student,
        you will be able to make your first sketch after the first lesson.
       </p>
-      <button class="hero_button">Get started</button>
+      <button class="hero_button" data-modal-open>Get started</button>
     </div>
   </div>
 </section>
@@ -187,7 +187,61 @@
     
     
     
-    
+            <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal_close_button" data-modal-close>
+          <svg class="icon_close" width="11" height="11">
+            <use href="/Britlex-Project-DREAM-TEAM/assets/symbol-defs-6c12a3eb.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal_form">
+          <h3 class="modal_title">Залиште свої дані, ми вам передзвонимо</h3>
+          <label class="modal_label">
+            <span class="modal_span">Ім'я</span>
+            <svg class="icon_modal" width="12" height="12">
+              <use href="/Britlex-Project-DREAM-TEAM/assets/symbol-defs-6c12a3eb.svg#icon-human"></use>
+            </svg>
+            <input class="modal_input" type="text" required />
+          </label>
+          <label class="modal_label">
+            <span class="modal_span">Телефон</span>
+            <svg class="icon_modal" width="14" height="14">
+              <use href="/Britlex-Project-DREAM-TEAM/assets/symbol-defs-6c12a3eb.svg#icon-phone"></use>
+            </svg>
+            <input class="modal_input" type="tel" required />
+          </label>
+          <label class="modal_label">
+            <span class="modal_span">Пошта</span>
+            <svg class="icon_modal" width="16" height="12">
+              <use href="/Britlex-Project-DREAM-TEAM/assets/symbol-defs-6c12a3eb.svg#icon-post"></use>
+            </svg>
+            <input class="modal_input" type="email" required />
+          </label>
+          <label class="modal_label">
+            <span class="modal_span">Коментар</span>
+            <textarea
+              placeholder="Введіть текст"
+              class="modal_textarea"
+              ></textarea>
+          </label>
+          <div class="copy_div">
+            <label class="copy_label">
+              <input class="copy_input" type="checkbox" />
+            </label>
+            <span class="copy_span"
+              >Погоджуюся з розсилкою та приймаю<a
+                class="copy_link"
+                href="./copyright.html"
+                target="_blank"
+                > Умови договору</a
+              ></span
+            >
+          </div>
+          <button class="button_label" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
     
   </body>
 </html>
