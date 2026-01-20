@@ -1,3 +1,6 @@
+
+import "./js/modal"
+
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.header__nav');
 
@@ -8,3 +11,4 @@ if (burger && nav) {
     document.body.classList.toggle('lock');
   });
 }
+
