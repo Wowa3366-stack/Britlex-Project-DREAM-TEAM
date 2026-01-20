@@ -2,7 +2,6 @@
   &_list {
     display: flex;
     justify-content: center;
-    align-items: stretch;
     flex-direction: column;
     gap: 65px;
     @media screen and (min-width: 768px) {
@@ -26,7 +25,8 @@
       }
       @media screen and (min-width: 768px) {
         padding: 0px;
-        max-width: 220px
+        max-width: 220px;
+        align-items: flex-start;
       }
       @media screen and (min-width: 992px) {
         max-width: 285px;
@@ -34,35 +34,7 @@
       @media screen and (min-width: 1600px) {
         max-width: 430px;
       }
-    &-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: var(--font-family);
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 156%;
-      color: var(--second-text-color);
-      margin-bottom: 25px;
-      text-align: center;
-      flex-grow: 10;
-      @media screen and (min-width: 576px) {
-        font-size: 24px;
-      }
-      @media screen and (min-width: 768px) {
-        font-size: 20px;
-        text-align: left;
-        width: 160px;
-      }
-      @media screen and (min-width: 992px) {
-        font-size: 22px;
-        width: auto;
-      }
-      @media screen and (min-width: 1600px) {
-        font-size: 30px;
-      }
-    }
-    &-img1::before,
+      &-img1::before,
     &-img2::before,
     &-img3::before {
       content: '';
@@ -72,6 +44,18 @@
         background-size: contain;
         flex-grow: 1;
       margin-bottom: 12px;
+      @media screen and (min-width: 576px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 22px;
+      }
+      @media screen and (min-width: 992px) {
+        margin-bottom: 15px;
+      }
+      @media screen and (min-width: 1600px) {
+        margin-bottom: 30px;
+      }
     }
     &-img1::before {
       background-image: url('../img/pricing1.svg');
@@ -136,6 +120,34 @@
         height: 240px;
       }
     }
+    &-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 156%;
+      color: var(--second-text-color);
+      margin-bottom: 25px;
+      text-align: center;
+      flex-grow: 10;
+      @media screen and (min-width: 576px) {
+        font-size: 24px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+        text-align: left;
+        width: 140px;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        width: auto;
+      }
+      @media screen and (min-width: 1600px) {
+        font-size: 30px;
+      }
+    }
     &-text {
       font-family: var(--font-family);
       font-weight: 400;
@@ -167,10 +179,10 @@
       }
       @media screen and (min-width: 768px) {
         height: 155px;
+        align-items: normal;
       }
       @media screen and (min-width: 992px) {
         height: 150px;
-        align-items: normal;
       }
       @media screen and (min-width: 1600px) {
       }
