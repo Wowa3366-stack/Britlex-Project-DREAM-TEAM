@@ -14,7 +14,7 @@
   "devDependencies": {
     "glob": "^8.1.0",
     "sass": "^1.97.1",
-    "vite": "^4.5.2"
+    "vite": "^4.5.14"
   },
   "author": " <@gmail.com>",
   "license": "ISC",
