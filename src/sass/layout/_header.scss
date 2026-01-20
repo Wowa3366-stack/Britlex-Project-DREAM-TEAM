@@ -6,22 +6,6 @@
 .header__container {
   display: flex;
   align-items: center;
-  padding-left: 129px;
-  padding-right: 131px;
-}
-
-@media (max-width: 1024px) {
-  .header__container {
-    padding-left: 31px;
-    padding-right: 31px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__container {
-    padding-left: 39px;
-    padding-right: 39px;
-  }
 }
 
 .header__logo {
