@@ -20,30 +20,36 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Britlex-Project-DREAM-TEAM/assets/index-3171cb55.js"></script>
-    <link rel="stylesheet" href="/Britlex-Project-DREAM-TEAM/assets/index-ff59f300.css">
+    <script type="module" crossorigin src="/Britlex-Project-DREAM-TEAM/assets/index-746635d4.js"></script>
+    <link rel="stylesheet" href="/Britlex-Project-DREAM-TEAM/assets/index-b8fe3e63.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <header class="header">
-  <div class="container header__container">
-    <a href="#" class="header__logo">Britlex</a>
+  <div class="header__container">
+    <a href="#" class="header__logo">Brit<span>lex</span></a>
 
-    <nav class="header__nav" id="nav">
+    <button class="burger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contacts">Contacts</a></li>
       </ul>
+
     </nav>
 
     <a href="#" class="header__btn">Let’s Talk</a>
   </div>
 </header>
-
-    <section class="hero_section section">
+    <section class="hero_section section" id="home">
   <div class="container hero">
     <img class="img_hero" src="/Britlex-Project-DREAM-TEAM/assets/hero_logo-6bb22259.svg" alt="hero_logo">
     <div class="hero_div_wrapper">
@@ -64,7 +70,7 @@
    
  
 
-    <section class="skils-section section" id="skils">
+    <section class="skils-section section" id="skills">
     <div class="container">
         <h2 class="skils-title title">Skils</h2>
         <ul class="skils-list">
@@ -103,7 +109,7 @@
         </ul>
     </div>
 </section>
-    <section class="about section">
+    <section class="about section" id="about">
   <div class="container about_container">
     <h2 class="about_title title">About Us</h2>
     <div class="about_content">
@@ -134,7 +140,7 @@
   </div>
 </section>
 
-    <section class="pricing section">
+    <section class="pricing section" id="pricing">
   <div class="container">
     <h2 class="pricing-title title">Pricing</h2>
     <ul class="pricing_list">
@@ -194,7 +200,7 @@
 </head>
 
 <body>
-    <section class="section">
+    <section class="section" id="contacts">
         <div class="container">
             <h3>Contact Us</h3>
             <p>Discover your current English level by
