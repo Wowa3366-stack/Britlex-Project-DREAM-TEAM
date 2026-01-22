@@ -157,7 +157,7 @@
   .hero_text {
     font-family: var(--font-family);
     font-size: 18px;
-    color: #555;
+    color: var(--third-text-color);
     margin-top: 22px;
     margin-bottom: 33px;
     @media (min-width: 576px) {
