@@ -1,5 +1,5 @@
 footer {
-  position: relative;
+ 
   padding-top: 84px;
   padding-bottom: 78px;
   @media screen and (min-width: 576px) {
@@ -19,32 +19,35 @@ footer {
     padding-bottom: 64px;
   }
 }
-.footer::before {
+.footer_flex{
+ position: relative; 
+}
+.footer_flex::before {
   content: '';
   display: block;
   width: 290px;
   height: 1px;
-top: 26px;
+  top: -26px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   background-color: #c4c4c4;
   @media screen and (min-width: 576px) {
     width: 510px;
-    top: 24px;
+    top: -24px;
   }
 
   @media screen and (min-width: 768px) {
     width: 690px;
-    top: 18px;
+    top: -18px;
   }
   @media screen and (min-width: 992px) {
     width: 929px;
-    top: 22px;
+    top: -22px;
   }
   @media screen and (min-width: 1600px) {
     width: 1338px;
-    top: 31px;
+    top: -31px;
   }
 }
 .footer_flex {
@@ -54,7 +57,7 @@ top: 26px;
   gap: 15px;
   @media screen and (min-width: 576px) {
     flex-direction: row;
-   justify-content: space-between;
+    justify-content: space-between;
   }
 }
 .footer_title {
